@@ -1,0 +1,59 @@
+.text {
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+}
+.radio-text {
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+}
+.form-input {
+  display: flex;
+  width: 360px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  color: #808080;
+  margin-bottom: 30px;
+}
+
+fieldset {
+  display: flex;
+  justify-content: space-evenly;
+  width: 340px;
+  height: 64px;
+  flex-shrink: 0;
+  stroke-width: 1px;
+  stroke: #808080;
+  margin-bottom: 27px;
+}
+.btn {
+  color: white;
+  display: flex;
+  width: 370px;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: #4e75ff;
+  border: none;
+  color: #fff;
+
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+}
+.btn:hover,
+.btn:active {
+  background: #6c8cff;
+}
