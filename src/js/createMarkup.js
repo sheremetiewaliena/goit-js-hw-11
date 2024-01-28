@@ -1,5 +1,5 @@
-export function createMarkup(arr) {
-  return arr
+export function createMarkup(hits) {
+  return hits
     .map(
       ({
         webformatURL,
@@ -9,18 +9,18 @@ export function createMarkup(arr) {
         views,
         comments,
         downloads,
-      }) => `
-  <li class="gallery-item">
+      }) =>
+        `
+        <li class="gallery-item">
   <a class="gallery-link" href="${largeImageURL}">
     <img
       class="gallery-image"
       src="${webformatURL}"
       alt="${tags}"
     />
-    <p class= "gallery-descr">• Likes: ${likes} • Views: ${views} • Comments: ${comments} •</span> Downloads:${downloads}</p>
+    <p class="gallery-descr">Likes: <span class="descr-span">${likes}</span> Views: <span class="descr-span">${views}</span> Comments: <span class="descr-span">${comments}</span> Downloads: <span class="descr-span">${downloads}</span></p>
   </a>
-</li>
-  `
+</li>`
     )
     .join('');
 }
