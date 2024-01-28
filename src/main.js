@@ -5,6 +5,8 @@ import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 import { form, loader, BASE_URL, API_KEY, searchBtn, gallery } from './js/refs';
 
+loader.style.display = 'none';
+
 form.addEventListener('submit', event => {
   event.preventDefault();
   const query = form.query.value.trim();
@@ -89,7 +91,7 @@ function createMessage(message) {
   });
 }
 
-function showLoader(state = true) {
+function showLoader(state = false) {
   loader.style.display = !state ? 'none' : 'inline-block';
   searchBtn.disabled = state;
 }
